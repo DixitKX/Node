@@ -1,0 +1,26 @@
+console.log("Hello")
+var user = require("./user")
+console.log(user)
+console.log(user.userName)
+console.log(user.userAge)
+user.printUserData(100)
+
+console.log("user file loaded...")
+var userName = "Ram"
+var userAge = 23
+
+const printUserData = (a)=>{
+    console.log("print userdata function called user.js file....",a)
+}
+
+//export
+//module.exports = userName
+//module.exports = userAge
+
+module.exports = {
+    userName,userAge,printUserData
+}
+
+
+npm install express
+npm install nodemon -g
